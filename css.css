@@ -1,0 +1,63 @@
+.table{
+    width: 1300px;
+    height: 550px;
+    /*position: relative;*/
+    background-color: green;
+    /*padding-top: 50px;*/
+    /*padding-left: 50px;*/
+
+}
+
+.table .cards{
+    left: 25px;
+    top: 25px;
+    background-color: #FFF;
+    /*position: absolute;*/
+    position:relative;
+    float: left;
+    margin-right: -100px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 200px;
+    height: 300px;
+    transition-duration:0.3s;
+    /*z-index:20;*/
+}
+
+.table .cards:hover{
+/*    transition-property: background-color;
+    transition-duration: 1s;*/
+    background-color: orange;
+    transform: rotate(7deg);
+    margin-top: -20px;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    /*z-index:1;*/
+}
+
+.table .cards.selected{
+    background-color:yellow;
+    /*-webkit-animation: NAME-YOUR-ANIMATION 5s infinite;*/
+    /*-moz-animation:    NAME-YOUR-ANIMATION 5s infinite;*/
+    /*-o-animation:      NAME-YOUR-ANIMATION 5s infinite;*/
+    animation:         rotate 5s infinite;
+}
+
+/*@-webkit-keyframes rotate {*/
+/*  0%   { opacity: 0; }*/
+/*  100% { opacity: 1; }*/
+/*}*/
+/*@-moz-keyframes rotate {*/
+/*  0%   { opacity: 0; }*/
+/*  100% { opacity: 1; }*/
+/*}*/
+/*@-o-keyframes rotate {*/
+/*  0%   { opacity: 0; }*/
+/*  100% { opacity: 1; }*/
+/*}*/
+
+@keyframes rotate {
+  0%   { opacity: 1; }
+  50%   { opacity: 0; }
+  100% { opacity: 1; }
+}
