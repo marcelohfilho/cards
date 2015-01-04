@@ -24,7 +24,7 @@
     /*z-index:20;*/
 }
 
-.table .cards:hover{
+.table .cards.allcards:hover{
 /*    transition-property: background-color;
     transition-duration: 1s;*/
     background-color: orange;
@@ -40,7 +40,7 @@
     /*-webkit-animation: NAME-YOUR-ANIMATION 5s infinite;*/
     /*-moz-animation:    NAME-YOUR-ANIMATION 5s infinite;*/
     /*-o-animation:      NAME-YOUR-ANIMATION 5s infinite;*/
-    animation:         rotate 5s infinite;
+    animation:         rotate 5s;
 }
 
 /*@-webkit-keyframes rotate {*/
@@ -55,6 +55,13 @@
 /*  0%   { opacity: 0; }*/
 /*  100% { opacity: 1; }*/
 /*}*/
+
+@keyframes position {
+  0%   { opacity: 1; }
+  50%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 @keyframes rotate {
   0%   { opacity: 1; }
