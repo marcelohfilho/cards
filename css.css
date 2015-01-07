@@ -20,8 +20,11 @@
     border-radius: 8px;
     width: 200px;
     height: 300px;
-    transition-duration:0.3s;
     /*z-index:20;*/
+}
+
+.table .cards.transition{
+    transition-duration: 0.3s;
 }
 
 .table .cards.allcards:hover{
@@ -37,10 +40,14 @@
 
 .table .cards.selected{
     background-color:yellow;
+    /*margin-left: 448px;*/
+    /*margin-top: 148px;*/
+    z-index: 2;
+    position: absolute;
     /*-webkit-animation: NAME-YOUR-ANIMATION 5s infinite;*/
     /*-moz-animation:    NAME-YOUR-ANIMATION 5s infinite;*/
     /*-o-animation:      NAME-YOUR-ANIMATION 5s infinite;*/
-    animation:         rotate 5s;
+    /*animation:         rotate 5s;*/
 }
 
 /*@-webkit-keyframes rotate {*/
@@ -67,4 +74,15 @@
   0%   { opacity: 1; }
   50%   { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.table .cover{
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.table .cover.to-cover{
+    width: 1300px;
+    height: 550px;
 }
